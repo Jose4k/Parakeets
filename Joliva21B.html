@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Joliva21C.css">
+        <title>Parakeet Colors</title>
+        
+    </head>
+    <body>
+        
+        <header></header>
+        
+        <h1>Parakeet Colors</h1>
+        <img id="parakeetImage" src="" alt="Parakeet Image" style="width: 500px; height: 500px;">
+
+        <br>
+        <button onclick="showImage('green')">Green!</button>
+        <button onclick="showImage('blue')">Blue!</button>
+        
+        <script>
+            function showImage(color){
+                const img=document.getElementById('parakeetImage');
+                if (color ==='green'){
+                    img.src = 'green_parakeet.jpg';
+                }else if (color ==='blue'){
+                    img.src = 'blue_parakeet.jpg';
+                }
+            }
+        
+        </script>
+            
+    </body>
+</html>
